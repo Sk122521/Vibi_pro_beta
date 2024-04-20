@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".ChangeCategory">
+    <ImageView
+        android:id="@+id/selected_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:adjustViewBounds="true"
+        android:src="@color/black"/>
+
+  <EditText
+      android:id="@+id/category_header"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Write Category Header"
+      android:visibility="gone"
+      app:layout_constraintTop_toBottomOf="@id/selected_image"/>
+  <EditText
+      android:id="@+id/continent"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="gone"
+      android:hint="Continent"
+      app:layout_constraintTop_toBottomOf="@id/category_header"/>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/continent"
+        tools:layout_editor_absoluteX="-38dp">
+
+        <Button
+            android:id="@+id/changeimagebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/submittopicbtn"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Add / Change Image"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/submittopicbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="submit Category"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

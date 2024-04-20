@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".ChnageActiveTopicActivity">
+    <ImageView
+        android:id="@+id/selected_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:adjustViewBounds="true"
+        android:src="@color/black"/>
+    <EditText
+        android:id="@+id/topic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write Title"
+        app:layout_constraintTop_toBottomOf="@id/selected_image"
+        android:layout_marginTop="5dp"/>
+    <EditText
+        android:id="@+id/topic_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/topic_title"
+        android:hint="Write Description"
+        android:layout_marginTop="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintTop_toBottomOf="@id/topic_description"
+        tools:layout_editor_absoluteX="-38dp">
+
+        <Button
+            android:id="@+id/changeimagebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/submittopicbtn"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Add / Change Image"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/submittopicbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="submit Topic"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="#606060"
+        android:layout_height="1dp"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:entries="@array/integer_values"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <Button
+        android:id="@+id/change_Nodeactivetopic_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:text="Change Number Of Deactive Topic"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner" />
+</androidx.constraintlayout.widget.ConstraintLayout>
