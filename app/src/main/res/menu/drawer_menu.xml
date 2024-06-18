@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_show_case"
+        android:title="Show Case" />
+    <item
+        android:id="@+id/nav_create_case"
+        android:title="Create Case" />
+    <item
+        android:id="@+id/delete_profile"
+        android:title="Delete account" />
+    <item
+        android:id="@+id/logout_profile"
+        android:title="Logout" />
+    <!-- Add more items as needed -->
+</group>
+</menu>

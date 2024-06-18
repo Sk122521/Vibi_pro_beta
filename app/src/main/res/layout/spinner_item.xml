@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10sp"
+    android:layout_margin="5dp"
+    android:paddingRight="10sp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/xcodeimage"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@color/cardview_light_background"
+        android:backgroundTint="@color/cardview_light_background"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        tools:src="@mipmap/xcode2_1" />
+
+    <TextView
+        android:id="@+id/xcodetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/xcodeimage"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:text="United Kingdom"/>
+        />
+</RelativeLayout>

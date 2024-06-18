@@ -1,27 +1,45 @@
 {
   "project_info": {
-    "project_number": "904856183776",
-    "firebase_url": "https://votingandpolling-85bba-default-rtdb.asia-southeast1.firebasedatabase.app/",
-    "project_id": "votingandpolling-85bba",
-    "storage_bucket": "votingandpolling-85bba.appspot.com"
+    "project_number": "314078118540",
+    "firebase_url": "https://caseapp-281b1-default-rtdb.firebaseio.com",
+    "project_id": "caseapp-281b1",
+    "storage_bucket": "caseapp-281b1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:904856183776:android:a09a8ba17bc0315996c185",
+        "mobilesdk_app_id": "1:314078118540:android:132dd981f880c9b94231a9",
         "android_client_info": {
-          "package_name": "com.example.myapplication"
+          "package_name": "com.example.Caseapp"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "314078118540-0bih5ghju01gilpnd1cjl5b4sd427io6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.Caseapp",
+            "certificate_hash": "4aa2bb050747da49d69f1b9842c13dee494cd033"
+          }
+        },
+        {
+          "client_id": "314078118540-q60n0eplfjpkvuap37jtij8uhdiu781o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyA7CMT_Biz4yzCwGE3wQwcgBaQgyUvBSzE"
+          "current_key": "AIzaSyCtMCSPmD6kgrGsDHLLNCTz6M1Beth6tA4"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314078118540-q60n0eplfjpkvuap37jtij8uhdiu781o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

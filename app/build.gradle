@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.myapplication'
+    namespace 'com.example.Caseapp'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.myapplication"
+        applicationId "com.example.Caseapp"
         minSdk 21
         targetSdk 34
         versionCode 1
@@ -55,10 +55,24 @@ dependencies {
     implementation 'com.google.firebase:firebase-appcheck-playintegrity:17.1.2'
     implementation("com.google.firebase:firebase-appcheck-debug:17.1.2")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation 'com.google.firebase:firebase-messaging:24.0.0'
 
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'com.github.JungHsuan:CircularList:1.2.3'
+
+    implementation 'com.facebook.android:facebook-core:[8,9)'
+    implementation 'com.facebook.android:facebook-login:[8,9)'
+    implementation 'com.facebook.android:facebook-android-sdk:[8,9)'
+
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+
+    // Also add the dependency for the Google Play services library and specify its version
+    implementation("com.google.android.gms:play-services-auth:21.1.0")
+
+    implementation("com.google.firebase:firebase-auth:22.3.1")
+    implementation ("com.google.android.gms:play-services-maps:18.2.0")
+
 }

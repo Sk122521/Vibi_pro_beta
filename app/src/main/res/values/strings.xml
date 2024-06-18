@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">VIBI Admin App</string>
+    <string name="app_name">VIBI PRO Beta</string>
     <string name="title_activity_topics">TopicsActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -82,4 +82,75 @@
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_verifyactivityotp">Verifyactivityotp</string>
     <string name="india">India</string>
+
+    <string name="facebook_app_id">1234</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+
+    <string-array name="category_values">
+        <item>Asia</item>
+        <item>Africa</item>
+        <item>Australia</item>
+        <item>America</item>
+        <item>Europe</item>
+    </string-array>
+
+    <string-array name="active_values">
+        <item>active</item>
+        <item>deactive</item>
+    </string-array>
+    <string name="choose_option">Choose an Option</string>
+    <string-array name="drop_down_options">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <!-- Add more options here if needed -->
+    </string-array>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string-array name="xcode1">
+        <item>Xzone1Summary stats</item>
+        <item>Xzone1.0Summary stats</item>
+        <item>Xzone1.1Summary stats</item>
+        <item>Xzone1.2Summary stats</item>
+        <item>Xzone1.3Summary stats</item>
+        <!-- Add more options here if needed -->
+    </string-array>
+    <string-array name="vcode5">
+        <item>#Vcodeconsolidatedstatcount  1020</item>
+        <item>#Vcodeconsolidatedstatcount  10202</item>
+        <item>#Vcodeconsolidatedstatcount  10203</item>
+        <item>#Vcodeconsolidatedstatcount  10204</item>
+        <item>#Vcodeconsolidatedstatcount  10205</item>
+        <!-- Add more options here if needed -->
+    </string-array>
+    <string-array name="xcode2">
+        <item>Xzone2standardstats</item>
+        <item>Xzone2.0standardstats</item>
+        <item>Xzone2.1standardstats</item>
+        <item>Xzone2.2standardstats </item>
+        <item>Xzone2.3standardstats</item>
+        <!-- Add more options here if needed -->
+    </string-array>
+    <string-array name="icon_names">
+        <item>xcode2_0</item>
+        <item>xcode2_1</item>
+        <item>xcode2_2</item>
+        <item>xcode2_3</item>
+        <item>xcode2_4</item>
+        <!-- Add more icon names as needed -->
+    </string-array>
 </resources>
